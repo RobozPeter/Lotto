@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="70.0" prefWidth="134.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.petrik.lotto.HelloController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100" minWidth="20.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="40" minWidth="20.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="30" minHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30" minHeight="20.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label fx:id="soroloSzam" text="15" GridPane.columnIndex="1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="sorsolButton" mnemonicParsing="false" onAction="#sorsolasClick" text="Sorsol" />
+      <Label fx:id="sorsoltSzamok" text="1 54 32 53 66" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</GridPane>
